@@ -5,7 +5,9 @@ import numpy
 """
 
 
-def primes(kmax):
+def primes(int kmax):
+    cdef int n, k, i
+    cdef int p[1000]
     p = numpy.zeros((1000), dtype=numpy.int)
     result = []
     if kmax > 1000:
